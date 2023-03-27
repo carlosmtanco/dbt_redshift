@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_trips
+    description: Staging table to append yellow and green taxi data
+    columns:
+
+      - name: pickup_datetime
+        description: Time and date of pickup
+        tests:
+          - not_null
+      
+      - name: dropoff_datetime
+        description: Time and date of dropoff
+        tests:
+          - not_null

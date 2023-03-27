@@ -1,0 +1,14 @@
+taxi:
+  target: taxiwh
+  outputs:
+    taxiwh:
+      type: redshift
+      host: taxidwh-wg.562832330937.eu-west-1.redshift-serverless.amazonaws.com
+      user: dbt_user
+      password: TR01!Y4pu&Vz
+      port: 5439
+      dbname: taxiwh
+      schema: taxi_dbt
+      threads: 4
+      keepalives_idle: 240
+      connect_timeout: 10

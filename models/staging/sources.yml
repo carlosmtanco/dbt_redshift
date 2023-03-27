@@ -1,0 +1,186 @@
+version: 2
+
+sources:
+  - name: taxi_external
+    description: Zones lookup and yellow and green taxi data
+    database: taxiwh
+    schema: taxi_external
+    loader: s3
+    tables:
+      - name: green
+        description: Green taxi data
+        external:
+          location: "s3://nyc-taxi-ds/green/"
+          row_format: >
+            serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+            with serdeproperties (
+                'separatorChar'=','
+            )
+          table_properties: "('skip.header.line.count'='1')"
+        columns:
+          - name: VendorID
+            data_type: int
+            description: desc
+            tests:
+            #  - unique
+            - not_null
+
+          - name: lpep_pickup_datetime
+            data_type: timestamp
+
+          - name: lpep_dropoff_datetime
+            data_type: timestamp
+    
+          - name: store_and_fwd_flag
+            data_type: varchar(50)
+
+          - name: RateCodeID
+            data_type: real
+
+          - name: PULocationID
+            data_type: int
+
+          - name: DOLocationID
+            data_type: int
+            
+          - name: passenger_count
+            data_type: real
+            
+          - name: trip_distance
+            data_type: real
+
+          - name: fare_amount
+            data_type: real
+
+          - name: extra
+            data_type: real
+          
+          - name: mta_tax
+            data_type: real
+          
+          - name: tip_amount
+            data_type: real
+          
+          - name: tolls_amount
+            data_type: real
+
+          - name: ehail_fee
+            data_type: real
+
+          - name: improvement_surcharge
+            data_type: real
+
+          - name: total_amount
+            data_type: real
+
+          - name: payment_type
+            data_type: real
+
+          - name: trip_type
+            data_type: real
+  
+          - name: congestion_surcharge
+            data_type: real
+
+      - name: yellow
+        description: Yellow taxi data
+        external:
+          location: "s3://nyc-taxi-ds/yellow/"
+          row_format: >
+            serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+            with serdeproperties (
+                'separatorChar'=','
+            )
+          table_properties: "('skip.header.line.count'='1')"
+        columns:
+
+          - name: filerownum
+            data_type: int
+            description: desc
+          
+          - name: VendorID
+            data_type: int
+            description: desc
+            #tests:
+            #  - unique
+            #  - not_null
+
+          - name: tpep_pickup_datetime
+            data_type: timestamp
+
+          - name: tpep_dropoff_datetime
+            data_type: timestamp
+    
+          - name: passenger_count
+            data_type: real
+
+          - name: trip_distance
+            data_type: real
+
+          - name: RatecodeID
+            data_type: real
+
+          - name: store_and_fwd_flag
+            data_type: varchar(50)
+
+          - name: PULocationID
+            data_type: real
+
+          - name: DOLocationID
+            data_type: real
+
+          - name: payment_type
+            data_type: real
+          
+          - name: fare_amount
+            data_type: real
+          
+          - name: extra
+            data_type: real
+
+          - name: mta_tax
+            data_type: real
+
+          - name: tip_amount
+            data_type: real
+
+          - name: tolls_amount
+            data_type: real
+
+          - name: improvement_surcharge
+            data_type: real
+
+          - name: total_amount
+            data_type: real
+
+          - name: congestion_surcharge
+            data_type: real
+
+          - name: airport_fee
+            data_type: real
+
+      - name: zones
+        description: Zones lookup
+        external:
+          location: "s3://nyc-taxi-ds/lookups/taxi_zones/"
+          row_format: >
+            serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+            with serdeproperties (
+                'separatorChar'=','
+            )
+          table_properties: "('skip.header.line.count'='1')"
+        columns:
+
+          - name: LocationID
+            data_type: int
+            description: desc
+          
+          - name: Borough
+            data_type: varchar(50)
+            description: desc
+
+          - name: Zone
+            data_type: varchar(50)
+
+          - name: service_zone
+            data_type: varchar(50)
