@@ -1,0 +1,36 @@
+-- create new database
+create database taxiwh with owner admin;
+
+
+-- create external tables schema and new glue data catalog on the new database
+create external schema taxi_external
+from data catalog
+database 'taxi_dbt'
+iam_role 'YOUR IAM ROLE WITH REDSHIFT, S3 AND GLUE PRIVILEGES'
+create external database if not exists;
+
+create schema taxi_dbt;
+
+-- create dbt user and group
+create user dbt_user with password 'PASSWORD HERE'
+    nocreatedb nocreateuser syslog access restricted
+    connection limit 10;
+
+-- create dbt group
+create group dbt_group with user dbt_user;
+
+-- grants on taxi_external schema
+grant usage on schema taxi_external to group dbt_group;
+grant create on schema taxi_external to group dbt_group;
+grant all on all tables in schema taxi_external to group dbt_group;
+
+-- grants on taxi_dbt schema
+grant usage on schema taxi_dbt to group dbt_group;
+grant create on schema taxi_dbt to group dbt_group;
+grant all on all tables in schema taxi_dbt to group dbt_group;
+
+grant create schema to group dbt_group;
+
+-- reassign schema ownership to dbt
+alter schema taxi_dbt owner to dbt_user;
+alter schema taxi_external owner to dbt_user;
