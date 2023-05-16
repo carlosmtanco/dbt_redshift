@@ -777,3 +777,99 @@ drop view if exists "taxiwh"."taxi_dbt"."ft_trips__dbt_backup" cascade
 2023-05-16 12:17:22.117658 (Thread-75): handling status request
 2023-05-16 12:17:22.119168 (Thread-75): 12:17:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d40b37f0>]}
 2023-05-16 12:17:22.119957 (Thread-75): sending response (<Response 11655 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:12.179236 (Thread-76): handling reload request
+2023-05-16 12:18:12.179746 (Thread-76): 12:18:12  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d40b3670>]}
+2023-05-16 12:18:12.180248 (Thread-76): sending response (<Response 61 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:12.248321 (Thread-77): 12:18:12  checksum: 0049c9ca814b191acba678e7b1a0d7a85eeac3e13700309cfc1ce1a2c78d3886, vars: {}, profile: user, target: None, version: 1.4.6
+2023-05-16 12:18:12.270220 (Thread-77): 12:18:12  Unable to do partial parsing because config vars, config profile, or config target have changed
+2023-05-16 12:18:12.270661 (Thread-77): 12:18:12  previous checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, current checksum: 0049c9ca814b191acba678e7b1a0d7a85eeac3e13700309cfc1ce1a2c78d3886
+2023-05-16 12:18:12.270936 (Thread-77): 12:18:12  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d4164bb0>]}
+2023-05-16 12:18:12.521882 (Thread-78): handling status request
+2023-05-16 12:18:12.522437 (Thread-78): 12:18:12  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d4167700>]}
+2023-05-16 12:18:12.553216 (Thread-78): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:12.848185 (Thread-79): handling status request
+2023-05-16 12:18:12.864026 (Thread-79): 12:18:12  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d410bac0>]}
+2023-05-16 12:18:12.874900 (Thread-79): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:12.966070 (Thread-80): handling status request
+2023-05-16 12:18:12.981904 (Thread-80): 12:18:12  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d4130b20>]}
+2023-05-16 12:18:12.987587 (Thread-80): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:13.080652 (Thread-81): handling status request
+2023-05-16 12:18:13.102062 (Thread-81): 12:18:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d63a6850>]}
+2023-05-16 12:18:13.112915 (Thread-81): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:13.209576 (Thread-82): handling status request
+2023-05-16 12:18:13.232007 (Thread-82): 12:18:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d63c6700>]}
+2023-05-16 12:18:13.237775 (Thread-82): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:13.336250 (Thread-83): handling status request
+2023-05-16 12:18:13.357131 (Thread-83): 12:18:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d6dff790>]}
+2023-05-16 12:18:13.367904 (Thread-83): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:13.434173 (Thread-84): handling status request
+2023-05-16 12:18:13.455362 (Thread-84): 12:18:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d6dff1f0>]}
+2023-05-16 12:18:13.455945 (Thread-85): handling status request
+2023-05-16 12:18:13.471180 (Thread-84): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:13.481895 (Thread-85): 12:18:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d6dd66a0>]}
+2023-05-16 12:18:13.498160 (Thread-85): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:13.594576 (Thread-86): handling status request
+2023-05-16 12:18:13.615473 (Thread-86): 12:18:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d6dcacd0>]}
+2023-05-16 12:18:13.626244 (Thread-86): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:13.722367 (Thread-87): handling status request
+2023-05-16 12:18:13.743290 (Thread-87): 12:18:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d6dd64c0>]}
+2023-05-16 12:18:13.754071 (Thread-87): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:13.801408 (Thread-77): 12:18:13  1699: static parser successfully parsed ft_trips.sql
+2023-05-16 12:18:13.805258 (Thread-77): 12:18:13  1699: static parser successfully parsed staging/stg_trips.sql
+2023-05-16 12:18:13.833421 (Thread-88): handling status request
+2023-05-16 12:18:13.833958 (Thread-88): 12:18:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2a477d4f0>]}
+2023-05-16 12:18:13.834434 (Thread-88): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:13.847460 (Thread-77): 12:18:13  1603: static parser failed on views/redshift_admin_table_stats.sql
+2023-05-16 12:18:13.854847 (Thread-77): 12:18:13  1602: parser fallback to jinja rendering on views/redshift_admin_table_stats.sql
+2023-05-16 12:18:13.856756 (Thread-77): 12:18:13  1699: static parser successfully parsed views/redshift_admin_queries.sql
+2023-05-16 12:18:13.860398 (Thread-77): 12:18:13  1699: static parser successfully parsed views/redshift_admin_users_table_view_privileges.sql
+2023-05-16 12:18:13.863909 (Thread-77): 12:18:13  1699: static parser successfully parsed views/redshift_admin_users_schema_privileges.sql
+2023-05-16 12:18:13.867997 (Thread-77): 12:18:13  1699: static parser successfully parsed views/redshift_admin_dependencies.sql
+2023-05-16 12:18:13.871414 (Thread-77): 12:18:13  1603: static parser failed on introspection/redshift_sort_dist_keys.sql
+2023-05-16 12:18:13.876361 (Thread-77): 12:18:13  1602: parser fallback to jinja rendering on introspection/redshift_sort_dist_keys.sql
+2023-05-16 12:18:13.877938 (Thread-77): 12:18:13  1603: static parser failed on introspection/redshift_constraints.sql
+2023-05-16 12:18:13.882777 (Thread-77): 12:18:13  1602: parser fallback to jinja rendering on introspection/redshift_constraints.sql
+2023-05-16 12:18:13.884316 (Thread-77): 12:18:13  1603: static parser failed on introspection/redshift_tables.sql
+2023-05-16 12:18:13.888949 (Thread-77): 12:18:13  1602: parser fallback to jinja rendering on introspection/redshift_tables.sql
+2023-05-16 12:18:13.890652 (Thread-77): 12:18:13  1603: static parser failed on introspection/redshift_columns.sql
+2023-05-16 12:18:13.895170 (Thread-77): 12:18:13  1602: parser fallback to jinja rendering on introspection/redshift_columns.sql
+2023-05-16 12:18:13.897313 (Thread-77): 12:18:13  1699: static parser successfully parsed base/pg_attribute.sql
+2023-05-16 12:18:13.902525 (Thread-77): 12:18:13  1699: static parser successfully parsed base/pg_depend.sql
+2023-05-16 12:18:13.903228 (Thread-89): handling status request
+2023-05-16 12:18:13.906529 (Thread-77): 12:18:13  1699: static parser successfully parsed base/svv_diskusage.sql
+2023-05-16 12:18:13.906988 (Thread-89): 12:18:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2a46e39d0>]}
+2023-05-16 12:18:13.910311 (Thread-77): 12:18:13  1699: static parser successfully parsed base/pg_views.sql
+2023-05-16 12:18:13.910831 (Thread-89): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:13.914462 (Thread-77): 12:18:13  1699: static parser successfully parsed base/pg_class.sql
+2023-05-16 12:18:13.918129 (Thread-77): 12:18:13  1699: static parser successfully parsed base/stl_query.sql
+2023-05-16 12:18:13.921444 (Thread-77): 12:18:13  1699: static parser successfully parsed base/stv_blocklist.sql
+2023-05-16 12:18:13.924798 (Thread-77): 12:18:13  1699: static parser successfully parsed base/pg_namespace.sql
+2023-05-16 12:18:13.928124 (Thread-77): 12:18:13  1699: static parser successfully parsed base/stl_explain.sql
+2023-05-16 12:18:13.931683 (Thread-77): 12:18:13  1699: static parser successfully parsed base/stl_wlm_query.sql
+2023-05-16 12:18:13.934928 (Thread-77): 12:18:13  1699: static parser successfully parsed base/pg_user.sql
+2023-05-16 12:18:13.938198 (Thread-77): 12:18:13  1699: static parser successfully parsed base/stv_partitions.sql
+2023-05-16 12:18:13.941453 (Thread-77): 12:18:13  1699: static parser successfully parsed base/stv_tbl_perm.sql
+2023-05-16 12:18:13.945028 (Thread-77): 12:18:13  1699: static parser successfully parsed base/redshift_cost.sql
+2023-05-16 12:18:13.948259 (Thread-77): 12:18:13  1699: static parser successfully parsed base/pg_tables.sql
+2023-05-16 12:18:13.998616 (Thread-90): handling status request
+2023-05-16 12:18:14.014521 (Thread-90): 12:18:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2a4771b20>]}
+2023-05-16 12:18:14.025261 (Thread-90): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:14.101073 (Thread-91): handling status request
+2023-05-16 12:18:14.101594 (Thread-91): 12:18:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2a47c0a90>]}
+2023-05-16 12:18:14.102063 (Thread-91): sending response (<Response 163 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:14.117255 (Thread-77): 12:18:14  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.staging
+2023-05-16 12:18:14.124204 (Thread-77): 12:18:14  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2a4662e80>]}
+2023-05-16 12:18:14.159750 (Thread-92): handling status request
+2023-05-16 12:18:14.160248 (Thread-92): 12:18:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2a4660460>]}
+2023-05-16 12:18:14.161073 (Thread-92): sending response (<Response 12136 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:14.166110 (Thread-93): handling list request
+2023-05-16 12:18:14.166485 (Thread-93): 12:18:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2a46603d0>]}
+2023-05-16 12:18:14.206292 (Thread-93): 12:18:14  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2a46cb730>]}
+2023-05-16 12:18:14.207024 (Thread-93): 12:18:14  Found 26 models, 3 tests, 0 snapshots, 0 analyses, 505 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+2023-05-16 12:18:14.207477 (Thread-93): 12:18:14  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2a59d7f70>]}
+2023-05-16 12:18:14.210149 (Thread-93): sending response (<Response 4024 bytes [200 OK]>) to 10.0.219.22
+2023-05-16 12:18:14.332739 (Thread-94): handling status request
+2023-05-16 12:18:14.333254 (Thread-94): 12:18:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f19513c4-285a-45fd-be7d-603e883c7a90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2a4660550>]}
+2023-05-16 12:18:14.334053 (Thread-94): sending response (<Response 12136 bytes [200 OK]>) to 10.0.219.22
